@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- boostraps start -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <input type="checkbox" name="" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <label for="" class="logo"><a class="nohover" href="#"><img src="./img/logo (1).png" alt=""
+                        width="160"></a></label>
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">INFLUENCERS</a></li>
+                <li><a href="#">LISTINGS</a></li>
+                <li><a href="#">JOBS</a></li>
+                <li><a href="#">blog</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a class="active" class="loginbtn" href="#">sign in <i
+                            class="fa-solid fa-arrow-right-to-bracket"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home">
+        <div class="hero_area pb-5">
+            <div class="container pt-5">
+                <div class="hero_area_heading">
+                    <h1 class="text-center">Track Down Your Best Listing</h1>
+                    <p>You can get your desired listing items here by name, category or location.</p>
+                </div>
+                <div class="row hero_search_color g-4 mt-5 pb-4">
+                    <div class="col-md-3">
+                        <div class="hero_search_block">
+                            <input class="form-control hero_search" type="search" name="" id=""
+                                placeholder="search here...">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="all_categori">
+                            <form>
+                                <select class="form-select">
+                                    <option>All-Categories</option>
+                                    <option>Gym</option>
+                                    <option>Hotel</option>
+                                    <option>Shopping</option>
+                                </select>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="all-location">
+                            <select class="form-select">
+                                <option>All-Location</option>
+                                <option>USA</option>
+                                <option>Canada</option>
+                                <option>Bangladesh</option>
+                                <option>Pakistan</option>
+                            </select>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="searchbar">
+                            <input class="form-control hero_searchbar" type="submit" value="Search">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- new listing gategories page start -->
+    <section>
+        <div class="l_c_bg">
+            <div class="container mt-2  pt-5 pb-5">
+                <div class="listing_categories">
+                    <div class="row listing_categaories_responsive g-4">
+                        <!-- card 1 -->
+                        <div class="col-md-3 r">
+                            <a href="#">
+                                <div class="l_c_card">
+                                    <div class="l_c_logo">
+                                        <i class="fa-solid fa-dumbbell"></i>
+                                    </div>
+                                    <div class="l_c_content">
+                                        <h4>GYM</h4>
+                                        <p>1 Listing</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- card 2 -->
+                        <div class="col-md-3 r">
+                            <a href="#">
+                                <div class="l_c_card">
+                                    <div class="l_c_logo">
+                                        <i class="fa-solid fa-hotel"></i>
+                                    </div>
+                                    <div class="l_c_content">
+                                        <h4>HOTEL</h4>
+                                        <p>0 Listing</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- card 3 -->
+                        <div class="col-md-3 r">
+                            <a href="#">
+                                <div class="l_c_card">
+                                    <div class="l_c_logo">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </div>
+                                    <div class="l_c_content">
+                                        <h4>SHOPPING</h4>
+                                        <p>1 Listing</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- card 4 -->
+                        <div class="col-md-3 r">
+                            <a href="#">
+                                <div class="l_c_card">
+                                    <div class="l_c_logo">
+                                        <i class="fa-solid fa-plane"></i>
+                                    </div>
+                                    <div class="l_c_content">
+                                        <h4>TRAVEL AGENCY</h4>
+                                        <p>1 Listing</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- card 5 -->
+                        <div class="col-md-3 r">
+                            <a href="#">
+                                <div class="l_c_card">
+                                    <div class="l_c_logo">
+                                        <i class="fa-solid fa-plane"></i>
+                                    </div>
+                                    <div class="l_c_content">
+                                        <h4>TRAVEL AGENCY</h4>
+                                        <p>1 Listing</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- card 6 -->
+                        <div class="col-md-3 r">
+                            <a href="#">
+                                <div class="l_c_card">
+                                    <div class="l_c_logo">
+                                        <i class="fa-solid fa-plane"></i>
+                                    </div>
+                                    <div class="l_c_content">
+                                        <h4>TRAVEL AGENCY</h4>
+                                        <p>1 Listing</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- card 7 -->
+                        <div class="col-md-3 r">
+                            <a href="#">
+                                <div class="l_c_card">
+                                    <div class="l_c_logo">
+                                        <i class="fa-solid fa-hotel"></i>
+                                    </div>
+                                    <div class="l_c_content">
+                                        <h4>HOTEL</h4>
+                                        <p>0 Listing</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- card 8 -->
+                        <div class="col-md-3 r">
+                            <a href="#">
+                                <div class="l_c_card">
+                                    <div class="l_c_logo">
+                                        <i class="fa-solid fa-dumbbell"></i>
+                                    </div>
+                                    <div class="l_c_content">
+                                        <h4>GYM</h4>
+                                        <p>1 Listing</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- card 9 -->
+                        <div class="col-md-3 r">
+                            <a href="#">
+                                <div class="l_c_card">
+                                    <div class="l_c_logo">
+                                        <i class="fa-solid fa-plane"></i>
+                                    </div>
+                                    <div class="l_c_content">
+                                        <h4>TRAVEL AGENCY</h4>
+                                        <p>1 Listing</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- card 10 -->
+                        <div class="col-md-3 r">
+                            <a href="#">
+                                <div class="l_c_card">
+                                    <div class="l_c_logo">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </div>
+                                    <div class="l_c_content">
+                                        <h4>SHOPPING</h4>
+                                        <p>1 Listing</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- card 11 -->
+                        <div class="col-md-3 r">
+                            <a href="#">
+                                <div class="l_c_card ">
+                                    <div class="l_c_logo ">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </div>
+                                    <div class="l_c_content">
+                                        <h4>SHOPPING</h4>
+                                        <p>1 Listing</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- card 12 -->
+                        <div class="col-md-3 r">
+                            <a href="#">
+                                <div class="l_c_card">
+                                    <div class="l_c_logo">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </div>
+                                    <div class="l_c_content">
+                                        <h4>SHOPPING</h4>
+                                        <p>1 Listing</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Popular Listings page start -->
+
+    <section>
+        <div class="container-fluid popular_bg pb-5 mt-5 pt-5">
+            <div class="popular_listing">
+                <h1>Popular Listings</h1>
+                <p>Explore the best listings near you. You won’t be disappointed.</p>
+            </div>
+            <div class="row popular_resposive g-2">
+                <div class="col-md-3 popular_card_responsive">
+                    <div class="popular_list">
+                        <a href="#">
+                            <div class="popular_list_card">
+                                <img src="./img/propp-1.png" alt="">
+                                <div class="popular_card_content">
+                                    <div class="star"><i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i> <span>(2 reviews)</span>
+                                    </div>
+                                    <h3>Bangkok Tour</h3>
+                                    <h5>Category: Travel Agency</h5>
+                                    <p><i class="fa-solid fa-location-crosshairs"></i> Cano, Kano, NGA, Canada</p>
+                                </div>
+                                <div class="heart"><i class="fa-regular fa-heart"></i></div>
+                                <div class="user_popular"><span>Demo user</span></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 popular_card_responsive">
+                    <div class="popular_list">
+                        <a href="#">
+                            <div class="popular_list_card">
+                                <img src="./img/pl2.jpg" alt="" class="img-fluid">
+                                <div class="popular_card_content">
+                                    <div class="star"><i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i><span>(6 reviews)</span>
+                                    </div>
+                                    <h3>Next Level Electroni...</h3>
+                                    <h5>Category: E-Commerce , Electronics Accessories , Shopping</h5>
+                                    <p><i class="fa-solid fa-location-crosshairs"></i> Inida, Ouilou, COG, India</p>
+                                </div>
+                                <div class="heart"><i class="fa-regular fa-heart"></i></div>
+                                <div class="user_popular"><span>Demo user</span></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 popular_card_responsive">
+                    <div class="popular_list">
+                        <a href="#">
+                            <div class="popular_list_card">
+                                <img src="./img/pl3.jpg" alt="">
+                                <div class="popular_card_content">
+                                    <div class="star"><i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i><span>(4 reviews)</span>
+                                    </div>
+                                    <h3>Fito Fitness & Gym n...</h3>
+                                    <h5>Category: Fitness , Gym</h5>
+                                    <p><i class="fa-solid fa-location-crosshairs"></i> Pakistan, Pakistan</p>
+                                </div>
+                                <div class="heart"><i class="fa-regular fa-heart"></i></div>
+                                <div class="user_popular"><span>Demo user</span></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 popular_card_responsive">
+                    <div class="popular_list">
+                        <a href="#">
+                            <div class="popular_list_card">
+                                <img src="./img/pl4.jpg" alt="">
+                                <div class="popular_card_content">
+                                    <div class="star"><i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i><span>(7 reviews)</span>
+                                    </div>
+                                    <h3>Online Academy Train...</h3>
+                                    <h5>Category: Education</h5>
+                                    <p><i class="fa-solid fa-location-crosshairs"></i> Pakistan, Pakistan</p>
+                                </div>
+                                <div class="heart"><i class="fa-regular fa-heart"></i></div>
+                                <div class="user_popular"><span>Demo user</span></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 pt-4 popular_btn">
+                <button type="button" class="btn btn-warning popular_btn_load">View more <i
+                        class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+    <!-- Working Process page start -->
+    <section>
+        <div class="container mt-5 pt-4 pb-4">
+            <div class="wrok_process">
+                <p>Working Process</p>
+                <h1>How It Works</h1>
+            </div>
+            <div class="row working_process_responsive g-3 pt-5">
+                <div class="col-md-4 working_process_card_responsive">
+                    <div class="w_logo"><img src="./img/w1.png" alt=""></div>
+                    <h4>Registration</h4>
+                    <p>A user need to register in ListPlace by filling up very few details.</p>
+                </div>
+                <div class="col-md-4 working_process_card_responsive">
+                    <div class="w_logo"><img src="./img/w2.png" alt=""></div>
+                    <h4>Buy Package</h4>
+                    <p>A user need to register in ListPlace by filling up very few details.</p>
+                </div>
+                <div class="col-md-4 working_process_card_responsive">
+                    <div class="w_logo"><img src="./img/w3.png" alt=""></div>
+                    <h4>Add Listing</h4>
+                    <p>A user need to register in ListPlace by filling up very few details.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- News & Articles page start -->
+    <section>
+        <div class="new_bg">
+            <div class="container pt-5 pb-5">
+                <div class="news_articales">
+                    <h5>News & Articles</h5>
+                    <h1>Popular Blog Post</h1>
+                    <p>Explore the best listings near you. You won’t be disappointed.</p>
+                </div>
+                <div class="row news_articales_responsive  mt-2 g-4">
+                    <div class="col-md-4 news_responsive">
+                        <a href="#">
+                            <div class="news_aritcales_card">
+                                <img src="./img/n1.jpg" alt="">
+                                <div class="news_block mt-3">
+                                    <p>creative</p>
+                                </div>
+                                <h2>The Benefits of Listing Your Business on Multiple Directories</h2>
+                                <div class="admin">Moderator</div>
+                                <div class="ndate">May 16, 2023</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 news_responsive">
+                        <a href="#">
+                            <div class="news_aritcales_card news_aritcales_card1">
+                                <img src="./img/n2.jpg" alt="">
+                                <div class="news_block mt-3">
+                                    <p>collections</p>
+                                </div>
+                                <h2>The Pros and Cons of Free and Paid Business Listings</h2>
+                                <div class="admin">Admin</div>
+                                <div class="ndate">May 16, 2023</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 news_responsive">
+                        <a href="#">
+                            <div class="news_aritcales_card">
+                                <img src="./img/n3.jpg" alt="">
+                                <div class="news_block mt-3">
+                                    <p>collections</p>
+                                </div>
+                                <h2>The Benefits of Listing Your Business on Multiple Directories</h2>
+                                <div class="admin">Moderator</div>
+                                <div class="ndate">May 16, 2023</div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="col-md-12 pt-5 popular_btn">
+                    <button type="button" class="btn btn-primary popular_btn_load">EXPOLRE MORE <i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- newsletter page start -->
+    <section>
+        <div class="newsletter_bg pb-5">
+            <div class="container pt-5 mt-5">
+                <div class="newsletter_heading pt-5">
+                   <h1>Join Our Newsletter</h1>
+                   <p>
+                    Enter your email address to register to our newsletter subscription delivered on a regular basis!
+                   </p>
+                </div>
+                <div class="newsletter_search">
+                    <div class="input-group newsletter_searchbox mb-3">
+                        <input type="text" class="form-control newsletter_input" placeholder="Enter Email Address">
+                        <button class="btn btn-success newsletter_btn" type="submit">SUBSCRIBE</button>
+                      </div>
+                </div>
+                <p id="demo1">
+                    
+                </p>
+
+            </div>
+        </div>
+    </section>
+    <!-- footer page start -->
+    <section id="footer">
+        <footer>
+            <div class="footer_page">
+                <div class="container  pt-4 pb-5">
+                    <div class="footer_page_main">
+                        <div class="row footer_resposive g-4 pt-3">
+                            <div class="col-md-3">
+                                <div class="company_discribe">
+                                    <div class="logo_footer"><img src="./img/logo (1).png" alt="" width="130px"></div>
+                                    <p class="pt-2">ListPlace connects businesses with customers worldwide. With both free and paid listings, Discover the convenience of our directory and find what you need today.</p>
+                                    <div class="footer_social_network pt-3">
+                                        <div class="face"><a href="#"><i class="fa-brands fa-facebook"></i></a></div>
+                                        <div class="twitter"><a href="#"><i class="fa-brands fa-square-x-twitter"></i></a></div>
+                                        <div class="link"><a href="#"><i class="fa-brands fa-linkedin"></i></a></div>
+                                        <div class="insta"><a href="#"><i class="fa-brands fa-instagram"></i></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="quick_link">
+                                    <h3>Quick Links</h3>
+                                    <li><a href="#home">Home</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Listing</a></li>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="our_service">
+                                    <h3>OUR Services</h3>
+                                    <li><a href="#">Terms & Conditions</a></li>
+                                    <li><a href="#">Privacy Policy </a></li>
+                                    <li><a href="#">FAQ </a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="get_touch">
+                                    <h3>Get In Touch</h3>
+                                    <p><i class="fa-solid fa-phone"></i> +880 1797839367</p>
+                                    <p><i class="fa-solid fa-envelope"></i> zahidhasan800972@gmail.com</p>
+                                    <p><i class="fa-solid fa-location-crosshairs"></i> Badarganj,Rangpur, DHAKA</p>
+                                </div>
+                            </div>
+                            <div class="col-md-8 pt-2">
+                                <div class="copyRight">
+                                    <p>Copyright © 2024 Zahid All Rights Reserved</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 pt-2">
+                                <div class="language">
+                                    <a href="#"><p>English</p></a>
+                                    <a href="#"><p>Spanis</p></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <div>
+        <div class="up_btn">
+            <a href="#home"><i class="fa-solid fa-chevron-up"></i></a>
+        </div>
+    </div>
+    <div>
+        <div class="down_btn">
+            <a href="#footer"><i class="fa-solid fa-chevron-down"></i></a>
+        </div>
+    </div>
+
+
+    <script src="./jsfile/main.js"></script>
+</body>
+
+</html>
